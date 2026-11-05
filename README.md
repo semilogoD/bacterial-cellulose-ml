@@ -1,6 +1,6 @@
 # 🧫 AI-Driven Prediction of Bacterial Cellulose Yield from Sustainable Agricultural Substrates
 
-> **Status: 🚧 Research in progress.** The paper is in preparation for conference proceedings. Code, data and results will be released in this repository after publication.
+> **Status: 🚧 Research in progress.** The paper is in preparation for conference proceedings. Code, data and the full results will be released in this repository after publication.
 
 ## 📌 Project Overview
 
@@ -48,9 +48,19 @@ This project explores whether machine learning can help narrow that search. It c
           Candidate conditions as hypotheses for the lab
 ```
 
+## 🔎 What the Project Found (high level)
+
+*No figures, numbers or charts are reported here. Those will follow with the paper.*
+
+* **In the lab:** several agricultural wastes, used as carbon or nitrogen sources, gave higher yields than their conventional counterparts, and additives raised yield compared with an additive-free control. The benefit depended on the specific waste: not every one outperformed the conventional options.
+* **For machine learning:** the models looked useful when tested in the ordinary way, but did not hold up when tested on whole studies they had not seen. Substrate type, organism group and cultivation mode alone were not enough to predict yield in a new study, which points to differences between labs that published papers do not record.
+* **For explainability:** the model leaned most on the type of nutrient source or additive and on the organism group, and least on cultivation mode. These are associations the model relied on, not proof of cause.
+* **For the lab:** one of the model's top suggestions matched a condition the lab had already tested and found strong, which gives some confidence in the rest, but those remain untested hypotheses.
+* **The wider point:** better prediction across studies will need experimental conditions to be reported more fully and consistently.
+
 ## 🔒 Data and Code Availability
 
-The dataset combines unpublished wet-lab measurements with records compiled by hand from published papers, so it is not publicly available. The analysis code will be released here after the paper is published. Until then, this README describes the approach only and reports no results.
+The dataset combines unpublished wet-lab measurements with records compiled by hand from published papers, so it is not publicly available. The analysis code will be released here after the paper is published. Until then, this README describes the approach and the main findings in words only, with no figures or numbers.
 
 ## 🤖 AI Assistance Disclosure
 
@@ -63,7 +73,6 @@ AI tools (Claude, Anthropic) were used for literature search and citation verifi
 * Comparing regression models fairly with standard error metrics
 * Interpreting model behaviour with SHAP and stating its limits honestly
 * Reproducing and debugging a machine-learning pipeline in Jupyter
-
 
 ## 📚 Key Lessons Learned
 
